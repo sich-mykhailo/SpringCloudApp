@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: timeApp
+
+eureka:
+  client:
+    initial-instance-info-replication-interval-seconds: 2
+    registry-fetch-interval-seconds: 1
+ribbon:
+  ServerListRefreshInterval: 1000
