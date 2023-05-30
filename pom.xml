@@ -15,7 +15,6 @@
         <module>timeApp</module>
         <module>timeGenerator</module>
         <module>eureka</module>
-        <module>zuul</module>
     </modules>
     <packaging>pom</packaging>
     <name>SpringCloudApp</name>

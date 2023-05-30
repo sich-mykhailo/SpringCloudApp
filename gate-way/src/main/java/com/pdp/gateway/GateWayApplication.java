@@ -1,13 +1,13 @@
-package com.nerdy.gateway;
+package com.pdp.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GatewayApplication {
+public class GateWayApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(GatewayApplication.class, args);
+        SpringApplication.run(GateWayApplication.class, args);
     }
 
 }

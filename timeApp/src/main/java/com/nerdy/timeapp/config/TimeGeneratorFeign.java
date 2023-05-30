@@ -1,8 +1,11 @@
 package com.nerdy.timeapp.config;
 
-import com.nerdy.timeapp.controller.Time;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
 
-@FeignClient("time-generator")
-public interface TimeGeneratorFeign extends Time {
+@FeignClient(value = "time-generator")
+public interface TimeGeneratorFeign {
+
+    @GetMapping("/get-time")
+    String getEstimation();
 }

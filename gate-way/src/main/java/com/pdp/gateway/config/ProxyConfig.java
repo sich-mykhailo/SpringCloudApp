@@ -1,4 +1,4 @@
-package com.nerdy.gateway.config;
+package com.pdp.gateway.config;
 
 import org.springframework.cloud.gateway.route.RouteLocator;
 import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
@@ -15,7 +15,7 @@ public class ProxyConfig {
                         route -> route.path("/timeApp/**")
                         .and()
                         .method(HttpMethod.GET)
-                        .filters(filter -> filter.stripPrefix(1))
+                        .filters(filter -> filter.stripPrefix(1)) // remove first prefix
                         .uri("lb://timeApp"))
                 .route("time_generator_route",
                         route -> route.path("time-generator/**")
